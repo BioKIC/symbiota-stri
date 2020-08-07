@@ -248,7 +248,7 @@ include($SERVER_ROOT.'/includes/header.php');
 		<div style="margin:10px;">
 			<h3>Data Usage Policy:</h3>
 			Use of these datasets requires agreement with the terms and conditions in our
-			<a href="../../misc/usagepolicy.php">Data Usage Policy</a>.
+			<a href="../../includes/usagepolicy.php">Data Usage Policy</a>.
 			Locality details for rare, threatened, or sensitive records have been redacted from these data files.
 			One must contact the collections directly to obtain access to sensitive locality data.
 		</div>
@@ -351,7 +351,7 @@ include($SERVER_ROOT.'/includes/header.php');
 				$blockSubmitMsg = 'Archive cannot be published until occurrenceID GUID source is set<br/>';
 			}
 			if($recFlagArr['nullBasisRec']){
-				echo '<div style="margin:10px;font-weight:bold;color:red;">There are '.$recFlagArr['nullBasisRec'].' records missing basisOfRecord and will not be published. Please go to <a href="../editor/occurrencetabledisplay.php?q_recordedby=&q_recordnumber=&q_eventdate=&q_catalognumber=&q_othercatalognumbers=&q_observeruid=&q_recordenteredby=&q_dateentered=&q_datelastmodified=&q_processingstatus=&q_customfield1=basisOfRecord&q_customtype1=NULL&q_customvalue1=&q_customfield2=&q_customtype2=EQUALS&q_customvalue2=&q_customfield3=&q_customtype3=EQUALS&q_customvalue3=&collid='.$collid.'&csmode=0&occid=&occindex=0&orderby=&orderbydir=ASC">Edit Existing Occurrence Records</a> to correct this.</div>';
+				echo '<div style="margin:10px;font-weight:bold;color:red;">There are '.$recFlagArr['nullBasisRec'].' records missing basisOfRecord and will not be published. Please go to <a href="../editor/occurrencetabledisplay.php?q_recordedby=&q_recordnumber=&q_catalognumber&collid='.$collid.'&csmode=0&occid=&occindex=0">Edit Existing Occurrence Records</a> to correct this.</div>';
 			}
 			if($publishGBIF && $dwcUri && isset($GBIF_USERNAME) && isset($GBIF_PASSWORD) && isset($GBIF_ORG_KEY) && $GBIF_ORG_KEY){
 				if($collManager->getDatasetKey()){
