@@ -60,28 +60,27 @@
 				<span style="margin-left:5px;margin-right:5px;">
 					<a href='<?php echo $CLIENT_ROOT; ?>/sitemap.php'>Sitemap</a>
 				</span>
-
 			</div>
 			<ul id="hor_dropdown" class="eight columns">
 				<li>
 					<a href="<?php echo $CLIENT_ROOT; ?>/index.php" >Home</a>
 				</li>
 				<li>
-					<a href="<?php echo $CLIENT_ROOT; ?>/collections/index.php" >Search</a>
+					<a href="#" >Search</a>
 					<ul>
 						<li><a href="<?php echo $CLIENT_ROOT; ?>/collections/index.php" >Search Collections</a></li>
 						<li><a href="<?php echo $CLIENT_ROOT; ?>/collections/map/index.php" target="_blank">Map Search</a></li>
 					</ul>
 				</li>
 				<li>
-					<a href="<?php echo $CLIENT_ROOT; ?>/imagelib/search.php" >Images</a>
+					<a href="#" >Images</a>
 					<ul>
 						<li><a href="<?php echo $CLIENT_ROOT; ?>/imagelib/index.php" >Image Browser</a></li>
 						<li><a href="<?php echo $CLIENT_ROOT; ?>/imagelib/search.php" >Custom Search</a></li>
 					</ul>
 				</li>
 				<li>
-					<a href="<?php echo $CLIENT_ROOT; ?>/projects/index.php?" style="padding:2px 12px">Taxonomic<br/>Inventories</a>
+					<a href="#" style="padding:2px 12px">Taxonomic<br/>Inventories</a>
 					<ul>
 						<li><a href="<?php echo $CLIENT_ROOT; ?>/projects/index.php?pid=18" >Algae</a></li>
 						<li><a href="<?php echo $CLIENT_ROOT; ?>/projects/index.php?pid=1" >Amphibians</a></li>
@@ -95,7 +94,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="<?php echo $CLIENT_ROOT; ?>/projects/index.php?" style="padding:2px 12px">Geographic<br/>Inventories</a>
+					<a href="#" style="padding:2px 12px">Geographic<br/>Inventories</a>
 					<ul>
 						<li><a href="<?php echo $CLIENT_ROOT; ?>/projects/index.php?pid=20" >Barro Colorado Island</a></li>
 						<li><a href="<?php echo $CLIENT_ROOT; ?>/projects/index.php?pid=21" >Bocas del Toro</a></li>
@@ -127,7 +126,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="<?php echo $CLIENT_ROOT; ?>/glossary/index.php" >Glossary</a>
+					<a href="#" >Glossary</a>
 					<ul>
 						<li><a href="<?php echo $CLIENT_ROOT; ?>/misc/glossarycover.php" >Background</a></li>
 						<li><a href="<?php echo $CLIENT_ROOT; ?>/glossary/sources.php" >Contributors</a></li>
