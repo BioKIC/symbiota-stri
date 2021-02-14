@@ -67,9 +67,6 @@ if($SYMB_UID){
 	<head>
 		<title><?php echo $DEFAULT_TITLE; ?> Labels</title>
 		<style type="text/css">
-			<?php
-			if(isset($targetLabelFormatArr['defaultStyles'])) echo 'body{ '.$targetLabelFormatArr['defaultStyles']." } \n";
-			?>
 			.row { display: flex; flex-wrap: wrap; margin-left: auto; margin-right: auto;}
 			.label { page-break-before: auto; page-break-inside: avoid; }
 			<?php
@@ -97,7 +94,7 @@ if($SYMB_UID){
 			}
 			elseif($columnCount != 1){
 				?>
-				.label { width:<?php echo (floor(100/$columnCount)-3);?>%;padding:10px; }
+				.label { width:<?php echo (floor(100/$columnCount)-5);?>%;padding:15px; }
 				<?php
 			}
 			?>
@@ -105,12 +102,13 @@ if($SYMB_UID){
 			/* .cnBarcodeDiv { clear:both; padding-top:15px; }
 			.catalogNumber { clear:both; text-align:center; }
 			.otherCatalogNumbers { clear:both; text-align:center; }
-      .symbBarcode { padding-top:10px; } */
-      @media print {
-        .controls {
-          display: none;
-        }
-      }
+			.symbBarcode { padding-top:10px; } */
+			.label-header { clear:both; text-align: center }
+			.label-footer { clear:both; text-align: center; font-weight: bold; font-size: 12pt; }
+			@media print { .controls { display: none; } }
+			<?php
+			if(isset($targetLabelFormatArr['defaultStyles'])) echo $targetLabelFormatArr['defaultStyles'];
+			?>
 		</style>
 		<?php
 		if(isset($targetLabelFormatArr['defaultCss']) && $targetLabelFormatArr['defaultCss']){
@@ -157,17 +155,19 @@ if($SYMB_UID){
 					$headerStr = '';
 					if($hPrefix || $midStr || $hSuffix){
 						$headerStrArr = array();
-						$headerStrArr[] = trim($hPrefix);
+						// $headerStrArr[] = trim($hPrefix);
+            $headerStrArr[] = $hPrefix;
 						$headerStrArr[] = trim($midStr);
-						$headerStrArr[] = trim($hSuffix);
-						$headerStr = implode(" ",$headerStrArr);
+						// $headerStrArr[] = trim($hSuffix);
+            $headerStrArr[] = $hSuffix;
+						$headerStr = implode("",$headerStrArr);
 					}
 
 					$dupCnt = $_POST['q-'.$occid];
 					for($i = 0;$i < $dupCnt;$i++){
 						$labelCnt++;
 						if($columnCount == 'packet'){
-							echo '<div class="foldMarks1"><span style="float:left;">+</span><span style="float:right;">+</span></div>';
+							echo '<div class="page"><div class="foldMarks1"><span style="float:left;">+</span><span style="float:right;">+</span></div>';
 							echo '<div class="foldMarks2"><span style="float:left;">+</span><span style="float:right;">+</span></div>';
 						}
 						elseif($labelCnt%$columnCount == 1){
@@ -229,6 +229,9 @@ if($SYMB_UID){
 								<?php
 							}
 						}
+            if($columnCount == 'packet'){
+              echo '</div>';
+            }
 						echo '</div>';
 					}
 				}
