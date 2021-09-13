@@ -187,17 +187,21 @@ div.menuitem a:hover {
 	padding: 0rem 2.5rem;
 }
 
+#popup-innertext{
+	max-width: 1200px;
+	min-height: 100vh;
+    margin: 0 auto;
+	padding: 0rem 2.5rem;
+}
+
 @media (max-width: 790px) {
 	#innertext {
 		max-width: 100%;
 	}
-}
 
-#innertext a{
-
-}
-#innertext a:hover{
-
+	#popup-innertext{
+		max-width: 100%;
+	}
 }
 
 .hero-bg {
@@ -205,13 +209,13 @@ div.menuitem a:hover {
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-size: cover;
-        color: #FFFFFF;
+	color: #FFFFFF;
 	line-height: 1.7;
-        margin-right: auto;
-        margin-left: auto;
-        padding-left: 15px;
-        padding-right: 15px;
-        overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	overflow: hidden;
 	width: 100%;
 }
 
