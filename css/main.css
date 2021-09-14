@@ -45,7 +45,7 @@ header a {
 	font-size: 11px;
 	color: #FFFFFF;
 	margin: 0 auto;
-	padding: 1rem;
+	padding: 12px;
 	text-align: center;
 }
 
@@ -59,7 +59,7 @@ header a {
 	position:relative;
 	font-size: 12px;
 	width:auto;
-	height: 44px; 
+	height: 48px; 
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-left:0px;
@@ -69,8 +69,8 @@ header a {
 #hor_dropdown li{		
 	float: left;
 	position: relative;
-	padding: 0;
-	margin: 0;
+	padding: 0px;
+	margin: 0px;
 }
 
 #hor_dropdown a{
