@@ -25,35 +25,35 @@ header("Content-Type: text/html; charset=".$CHARSET);
 		<section>
 			<!-- Hero -->
 			<div class="hero-bg">
-                            <div class="container">
-				<div class="seven columns">
-					<h1 style="margin: 0; font-size: 3rem; line-height: 1;">Welcome to the developing STRI Symbiota Portal</h1>
-					<p style="font-size: 1.2rem; line-height: 1.7;">
-						Using novel, bottom-up, and extensible software platforms and collaborative strategies, ASU and STRI will demonstrate the research and outreach benefits of
-						biodiversity data sharing. The STRI Portal will leverage the value of data sharing using information from different STRI sources about plants, insects, fish, reptiles, and birds.
-					</p>
-				</div>
-				<!-- Slideshow -->
-				<div class="five columns">
-					<div style="background-color:#ffffff;float:right;">
-						<?php
-						$ssId = 1;
-						$numSlides = 10;
-						$width = 350;
-						$dayInterval = 7;
-						$interval = 7000;
-						$clid = '51';
-						$imageType = 'field';
-						$numDays = 30;
-						ini_set('max_execution_time', 120);
-						include_once($SERVER_ROOT.'/classes/PluginsManager.php');
-						$pluginManager = new PluginsManager();
-						echo $pluginManager->createSlideShow($ssId,$numSlides,$width,$numDays,$imageType,$clid,$dayInterval,$interval);
-						?>
+				<div class="container">
+					<div class="seven columns">
+						<h1 style="margin: 0; font-size: 3rem; line-height: 1;">Welcome to the developing STRI Symbiota Portal</h1>
+						<p style="font-size: 1.2rem; line-height: 1.7;">
+							Using novel, bottom-up, and extensible software platforms and collaborative strategies, ASU and STRI will demonstrate the research and outreach benefits of
+							biodiversity data sharing. The STRI Portal will leverage the value of data sharing using information from different STRI sources about plants, insects, fish, reptiles, and birds.
+						</p>
+					</div>
+					<!-- Slideshow -->
+					<div class="five columns">
+						<div style="background-color:#ffffff;float:right;">
+							<?php
+							$ssId = 1;
+							$numSlides = 10;
+							$width = 350;
+							$dayInterval = 7;
+							$interval = 7000;
+							$clid = '51';
+							$imageType = 'field';
+							$numDays = 30;
+							ini_set('max_execution_time', 120);
+							include_once($SERVER_ROOT.'/classes/PluginsManager.php');
+							$pluginManager = new PluginsManager();
+							echo $pluginManager->createSlideShow($ssId,$numSlides,$width,$numDays,$imageType,$clid,$dayInterval,$interval);
+							?>
+						</div>
 					</div>
 				</div>
 			</div>
-                     </div>
 		</section>
 
 		<section class="container" style="vertical-align: middle;">

@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-        font-family: Noto serif, sans-serif;
+	font-family: Noto serif, sans-serif;
 	background-repeat:repeat-x;
 	background-image:url(images/sitebg.jpg);
 	background-color:#ffffff;
@@ -35,17 +35,15 @@ header a {
 #top_navbar {
 	clear: both;
 	height: 44px;
-	margin: 0 auto;
 	max-width: 1440px;
 }
 
 #right_navbarlinks{
 	clear: both;
-	float: right;
 	font-size: 11px;
+	float: right;
 	color: #FFFFFF;
-	margin: 0 auto;
-	padding: 12px;
+	margin-top: 12px;
 	text-align: center;
 }
 
@@ -77,7 +75,10 @@ header a {
 	display: block;
 	color: #FFFFFF;
 	text-decoration: none;
-	padding: 12px 10px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
 	border-left: 1px solid #297ac6;
 }
 
@@ -87,7 +88,10 @@ header a {
 #hor_dropdown a:hover{
 	background-color: #003669;
 	color: #FFFFFF;
-	padding: 12px 10px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
 	background-image: none;	
 }
 /* Submenu */
