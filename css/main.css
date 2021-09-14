@@ -34,7 +34,7 @@ header a {
 
 #top_navbar {
 	clear: both;
-	height: 2.8rem;
+	height: 44px;
 	margin: 0 auto;
 	max-width: 1440px;
 }
@@ -45,22 +45,21 @@ header a {
 	font-size: 11px;
 	color: #FFFFFF;
 	margin: 0 auto;
-	padding: 1rem;
+	padding: 10px;
 	text-align: center;
 }
 
 #right_navbarlinks a{
-        color: #ffffff;
+	color: #ffffff;
 }
 
 #hor_dropdown {
 	list-style:none;
 	float:left;
 	position:relative;
-	font-size: 0.8rem;
+	font-size: 12px;
 	width:auto;
-	/* height: 4.6rem; */ 
-	/* height:31px; */
+	height: 44px; 
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-left:0px;
@@ -74,20 +73,21 @@ header a {
 	margin: 0;
 }
 
-#hor_dropdown li a{
+#hor_dropdown a{
 	display: block;
 	color: #FFFFFF;
 	text-decoration: none;
-        padding: 12px;
-        border-left: 1px solid #297ac6;
+	padding: 12px 10px;
+	border-left: 1px solid #297ac6;
 }
 
 #hor_dropdown li:last-of-type a{
-        border-right: 1px solid #297ac6;
+	border-right: 1px solid #297ac6;
 }
 #hor_dropdown a:hover{
 	background-color: #003669;
 	color: #FFFFFF;
+	padding: 12px 10px;
 	background-image: none;	
 }
 /* Submenu */
@@ -99,7 +99,6 @@ header a {
 	background-color: #064f93;
 	z-index: 1000;
 	transition: display 0.3s;
-	margin-top: 10px;
 }
 
 #hor_dropdown ul li{
@@ -111,12 +110,12 @@ header a {
 }
 #hor_dropdown li:hover ul {
 	left: 0;
-	top: 33px;
-    padding: 0;
+	top: 42px;
+    padding: 0px;
 	z-index: 1000;
 }
 #hor_dropdown li:hover ul a {
-	padding: 10px 2px 10px 2px;
+	padding: 5px;
 	text-decoration: none;
 	text-indent: 8px;
 	padding-right: 8px;
@@ -126,6 +125,30 @@ header a {
 }
 #hor_dropdown li:hover ul li a:hover { 
 	background: #003669; 
+}
+
+/* Secondary submenu */
+#hor_dropdown li ul li ul {
+	display: none;
+}
+#hor_dropdown li ul li:hover ul {
+	left:100%;
+	top:0;
+	display: block;
+	padding:0px;
+	z-index:1000;
+}
+#hor_dropdown li ul li:hover ul a {
+	padding:5px;
+	text-decoration:none;
+	text-indent:8px;
+	padding-right:8px;
+	background-image: none;
+	background-color:#064f93;
+	z-index:1000;
+}
+#hor_dropdown li ul li:hover ul li a:hover { 
+	background:#003669; 
 }
 
 footer {
