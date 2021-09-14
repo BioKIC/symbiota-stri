@@ -7,13 +7,13 @@ header("Content-Type: text/html; charset=".$CHARSET);
 <html>
 <head>
 	<title><?php echo $DEFAULT_TITLE; ?> Home</title>
-	<link href="js/jquery-ui-1.12.1/jquery-ui.css" type="text/css" rel="Stylesheet" />
+	<?php
+	include_once($SERVER_ROOT.'/includes/head.php');
+	include_once($SERVER_ROOT.'/includes/googleanalytics.php');
+	?>
 	<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
 	<script src="js/jquery-ui-1.12.1/jquery-ui.js" type="text/javascript"></script>
 	<script src="js/jquery.slides.js"></script>
-	<script type="text/javascript">
-		<?php include_once('includes/googleanalytics.php'); ?>
-	</script>
 </head>
 <body>
 	<?php

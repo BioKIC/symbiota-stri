@@ -112,8 +112,7 @@ header a {
 #hor_dropdown li:hover ul {
 	left: 0;
 	top: 33px;
-	padding-top: 8px;
-        padding-left: 0;
+    padding: 0;
 	z-index: 1000;
 }
 #hor_dropdown li:hover ul a {
