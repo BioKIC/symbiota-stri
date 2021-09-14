@@ -77,7 +77,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" style="padding:2px 12px">Taxonomic<br/>Inventories</a>
+					<a href="#" style="padding: 3px 12px 8px 12px">Taxonomic<br/>Inventories</a>
 					<ul>
 						<li><a href="<?php echo $CLIENT_ROOT; ?>/projects/index.php?pid=18" >Algae</a></li>
 						<li><a href="<?php echo $CLIENT_ROOT; ?>/projects/index.php?pid=1" >Amphibians</a></li>
@@ -91,7 +91,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" style="padding:2px 12px">Geographic<br/>Inventories</a>
+					<a href="#" style="padding: 3px 12px 8px 12px">Geographic<br/>Inventories</a>
 					<ul>
 						<li><a href="<?php echo $CLIENT_ROOT; ?>/projects/index.php?pid=20" >Barro Colorado Island</a></li>
 						<li><a href="<?php echo $CLIENT_ROOT; ?>/projects/index.php?pid=21" >Bocas del Toro</a></li>
