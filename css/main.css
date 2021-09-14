@@ -75,8 +75,8 @@ header a {
 	display: block;
 	color: #FFFFFF;
 	text-decoration: none;
-	padding-top: 12px;
-	padding-bottom: 18px;
+	padding-top: 14px;
+	padding-bottom: 16px;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-left: 1px solid #297ac6;
@@ -88,8 +88,8 @@ header a {
 #hor_dropdown a:hover{
 	background-color: #003669;
 	color: #FFFFFF;
-	padding-top: 12px;
-	padding-bottom: 18px;
+	padding-top: 14px;
+	padding-bottom: 16px;
 	padding-left: 10px;
 	padding-right: 10px;
 	background-image: none;	
