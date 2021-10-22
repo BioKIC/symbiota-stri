@@ -34,7 +34,7 @@ header a {
 
 #top_navbar {
 	clear: both;
-	height: 44px;
+	height: 50px;
 	max-width: 1440px;
 }
 
@@ -57,7 +57,7 @@ header a {
 	position:relative;
 	font-size: 12px;
 	width:auto;
-	height: 48px; 
+	height: 55px; 
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-left:0px;
@@ -114,7 +114,7 @@ header a {
 }
 #hor_dropdown li:hover ul {
 	left: 0;
-	top: 42px;
+	top: 47px;
     padding: 0px;
 	z-index: 1000;
 }
