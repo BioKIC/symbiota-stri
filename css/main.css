@@ -172,38 +172,6 @@ footer p:after{ content:""; display: inline-block; width: 100%; height: 0; }
 	}
 }
 
-/*Left menu components*/
-div.menu {
-}
-
-div.menuheader{
-}
-
-div.menuheader a{
-}
-
-div.menuheader a:hover {
-}
-
-div.menusubheader{
-}
-
-div.menusubheader a{
-}
-
-div.menusubheader a:hover {
-}
-
-div.menuitem {
-
-}
-
-div.menuitem a {
-}
-
-div.menuitem a:hover {
-}
-
 /*Central div in the middle center table div */
 #innertext{
 	font-size: 14px;

@@ -16,3 +16,6 @@ includes/spprofilehead.php
 includes/usagepolicy.php
 .project
 .settings/org.eclipse.core.resources.prefs
+.buildpath
+.settings/org.eclipse.php.core.prefs
+.settings/org.eclipse.wst.common.project.facet.core.xml
